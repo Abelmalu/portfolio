@@ -1,0 +1,181 @@
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    background-color: #41292C;
+}
+
+.hero{
+  
+  
+  /* background-color: rgba(100, 0, 25, 0.5); */
+  display:grid;
+  grid-template-columns: 400px 800px;
+  gap: 10px;
+  background-repeat: no-repeat;
+  align-items: center;
+  padding-left: 60px;
+  padding-bottom:40px;
+  padding-top:40px;
+  justify-content: center;
+
+  color:white;
+  justify-content: center;
+  /* background-blend-mode: multiply; */
+  background-position: right right;
+ 
+ 
+
+
+} 
+
+.container{
+
+/* background-image: url('e.jpg'); */
+background-color: #41292C;
+    background-size: cover;
+}
+
+
+
+
+
+.image{
+    width:100%;
+    height: auto;
+}
+
+.image img{
+    /* width: 400px;
+    height: auto; */
+    width:100%
+    /* border-radius: 200px; */
+    /* padding-top:20px; */
+}
+
+.hero h1{
+    font-size: 50px;
+    padding:20px 0;
+    font-weight: bold;
+
+}
+
+.hero h4{
+    font-size:30px;
+}
+
+.hero h2 {
+    margin-bottom:20px;
+}
+
+nav {
+    display:grid;
+    grid-template-columns:500px 600px;
+    justify-content: center;
+    padding:20px 0;
+    background-color: #41292C;
+    /* #937B63; */
+    color:#fff;
+
+}
+
+nav ul {
+    display: grid;
+    grid-template-columns: repeat(5,100px);
+    justify-content:end;
+    
+}
+nav span {
+    color:red;
+}
+nav ul li{
+    list-style-type: none;
+
+}
+
+.about{
+    display:grid;
+    grid-template-columns:600px 300px;
+    align-items: center;
+    padding:60px;
+    gap:10px;
+    justify-content: center;
+    grid-auto-columns: 250px;
+    background-color: #41292C;
+}
+.about img{
+    width:80%;
+    height: auto;
+    border: 8px solid white;
+    border-radius: 20px;
+   
+}
+
+
+.about-me{
+    color:#fff;
+
+
+}
+
+.about-me h1{
+
+    font-size: 40px;
+    padding-bottom:20px;
+}
+
+
+button{
+    padding:10px;
+    margin:20px;
+    font-size: 25px;
+}
+
+.heading {
+    text-align: center;
+    /* padding-left: 300px; */
+    padding-top: 50px;
+    font-size: 35px;
+}
+.experience{
+    
+    padding:40px;
+    display:grid;
+    grid-template-columns: repeat(3,300px);
+    color: antiquewhite;
+    gap:30px;
+    justify-content: center;
+    
+}
+
+.experience .language{
+    border:10px solid #694348;
+    padding:20px;
+    text-align: center;
+    border-radius: 20px;
+   
+
+}
+
+
+.experience .frontend{
+    border:10px solid #694348;
+    padding:20px;
+    text-align: center;
+    border-radius: 20px;
+   
+
+}
+
+
+.experience .backend{
+    border:10px solid #694348;
+    padding:20px;
+    text-align: center;
+    border-radius: 20px;
+   
+
+}
+
+

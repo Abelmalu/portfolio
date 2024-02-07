@@ -1,0 +1,89 @@
+{% extends 'core/base_layout.html ' %}
+{% load static %}
+
+{% block content %}
+
+<header>
+    <nav>
+        <p>Abel <span>M</span></p>
+        
+         <ul>
+             <li> Home</li>
+            <li>About</li>
+            <li>Services</li>
+            <li>Projects</li>
+            <li>ContacMe</li>
+        </ul>
+       
+    </nav>
+</header>
+
+
+
+<div class="container">
+    <section class="hero">
+        <div class="statment">
+            <h4>Hey👋 I'm</h4>
+            <h1>AbeL Malu </h1>
+            <h2>Software Developer</h2>
+            <p>Lorem, ipsum dolor sit ae repudiandae Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Minima voluptatibus delectus sint fuga similique accusantium!</p>
+        </div>
+        <div class="image">
+            <img src="{% static 'hero.png' %}" alt="couldn't find">
+        </div>
+    </section>
+</div>
+
+<section class="about">
+    <div class="about-img">
+        <img src="{% static 'about.jpg' %}" alt="couldn't find the image">
+    </div>
+    <div class="about-me">
+        <h1>AboutMe</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis veritatis illo pariatur exercitationem!</p>
+        <button>Projects</button>
+    </div>
+</section>
+    <div class="skill">
+        <h1 class="heading">My Experience</h1>
+        <div class="experience">
+            <div class="language">
+                <h1>Programming Languages </h1>
+                <h2>Python</h2>
+                <p>Advanced</p>
+                <h2>Java</h2>
+                <p>Intermediate</p>
+                <h2>JavaScript</h2>
+                <p>Intermediate</p>
+            </div>
+            
+            <div class="frontend">
+                <h1>frontend</h1>
+                <h2>HTML</h2>
+                <p>advanced</p>
+                <h2>CSS</h2>
+                <P>Intermediate</P>
+                <h2>React</h2>
+                <p>Basic</p>
+
+
+            </div>
+            <div class="backend">
+                <h1>Backend</h1>
+                <h2>Django</h2>
+                <p>Intermediate</p>
+                <h2>NodeJs</h2>
+                <p>Basic</p>
+                <h2>Laravel</h2>
+                <p>Basic</p>
+
+            </div>
+        </div>
+
+        
+    </div>
+
+
+
+{% endblock %}
