@@ -71,12 +71,13 @@ background-color: #41292C;
 
 nav {
     display:grid;
-    grid-template-columns:500px 600px;
+    grid-template-columns:400px 500px;
     justify-content: center;
     padding:20px 0;
     background-color: #41292C;
     /* #937B63; */
     color:#fff;
+    border: 20px;
 
 }
 
@@ -140,7 +141,7 @@ button{
 }
 .experience{
     
-    padding:40px;
+    padding:30px;
     display:grid;
     grid-template-columns: repeat(3,300px);
     color: antiquewhite;
@@ -178,4 +179,178 @@ button{
 
 }
 
+
+.knowledge{
+    padding:10px 3px;
+}
+
+.knowledge div  {
+    display:inline-block;
+
+}
+
+.services{
+    color:#fff;
+}
+
+.ma-offer{
+    display:grid;
+    grid-template-columns: repeat(3,300px);
+    gap: 30px;
+    justify-content: center;
+
+}
+
+.web-dev{
+    border: 10px solid #694348;
+        padding: 20px 30px;
+        text-align: center;
+        border-radius: 20px;
+        background-color: #694348;
+}
+
+.web-dev h1 {
+    background-color: #694348;
+
+}
+
+.web-dev p {
+    background-color: #694348;
+
+}
+
+
+
+
+.py-auto{
+    border: 10px solid #694348;
+        padding: 20px 30px;
+        text-align: center;
+        border-radius: 20px;
+        background-color: #694348;
+}
+
+.py-auto h1 {
+    background-color: #694348;
+
+}
+
+.py-auto p {
+    background-color: #694348;
+
+}
+
+.web-design{
+    border: 10px solid #694348;
+        padding: 20px 30px;
+        text-align: center;
+        border-radius: 20px;
+        background-color: #694348;
+}
+
+
+
+.web-design h1{
+    background-color: #694348;
+
+}
+.web-design p{
+    background-color: #694348;
+
+}
+
+
+
+.services-h1{
+    text-align: center;
+    padding:30px;
+
+
+}
+.contact-me h1{
+    padding : 30px;
+    text-align: center;
+    color:#fff;
+
+}
+.contact-me{
+    padding : 30px;
+    color: #fff;
+
+}
+
+.contact{
+    display: grid;
+    grid-template-columns: repeat(3,300px);
+    justify-content: center;
+    gap:30px;
+}
+.location{
+    border: 10px solid #694348;
+    text-align: center;
+    padding:30px;
+
+    
+
+}
+.location h3{
+
+    padding:10px;
+    padding-top:15px;
+}
+.phone{
+    border: 10px solid #694348;
+    text-align: center;
+    padding: 30px;
+
+}
+.phone h3 {
+
+    padding: 10px;
+    padding-top: 15px;
+}
+
+.email{
+    border: 10px solid #694348;
+    text-align: center;
+    padding: 30px;
+
+}
+.email h3 {
+
+    padding: 10px;
+    padding-top: 15px;
+}
+
+
+
+form{
+   padding:30px 0;
+    margin:20px auto;
+    text-align: center;
+} 
+
+form .name, .f-email{
+    width:25%;
+    padding:20px 0;
+    margin:20px 0;
+    border: 3px solid #694348;
+    border-radius: 20px ;
+    padding-left: 20px;
+}
+
+form textarea{
+    width:50%;
+    padding: 20px 0;
+    border: 3px solid #694348;
+    border-radius: 20px;
+    padding-left: 20px;
+}
+
+form .button {
+    padding:15px 20px;
+    border-radius: 15px;
+    color:white;
+    background: rgba(10, 165, 165, 0.377);
+}
 
