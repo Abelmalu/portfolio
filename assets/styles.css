@@ -24,6 +24,7 @@
   justify-content: center;
   /* background-blend-mode: multiply; */
   background-position: right right;
+  
  
  
 
@@ -104,6 +105,8 @@ nav ul li{
     justify-content: center;
     grid-auto-columns: 250px;
     background-color: #41292C;
+    
+        
 }
 .about img{
     width:80%;
@@ -260,7 +263,12 @@ button{
 }
 
 
+.services{
+    margin:40px 0;
 
+
+
+}
 .services-h1{
     text-align: center;
     padding:30px;
@@ -328,6 +336,8 @@ form{
    padding:30px 0;
     margin:20px auto;
     text-align: center;
+    color:white;
+       
 } 
 
 form .name, .f-email{
@@ -337,6 +347,7 @@ form .name, .f-email{
     border: 3px solid #694348;
     border-radius: 20px ;
     padding-left: 20px;
+    color: white;
 }
 
 form textarea{
@@ -345,6 +356,8 @@ form textarea{
     border: 3px solid #694348;
     border-radius: 20px;
     padding-left: 20px;
+    color: white;
+    border: 2px solid #925f65;
 }
 
 form .button {
@@ -352,5 +365,63 @@ form .button {
     border-radius: 15px;
     color:white;
     background: rgba(10, 165, 165, 0.377);
+    color: white;
 }
 
+.projects{
+    display:grid;
+    grid-template-columns: repeat(1,800px);
+    padding:30px;
+    gap: 30px;
+    padding-left: 180px;
+    color:#fff;
+    
+  
+}
+
+.projects h1{
+    text-align: center;
+    
+}
+
+
+.smart-class-room{
+    display: grid;
+    grid-template-columns:300px 300px;
+    gap: 50px;
+    align-items: center;
+    /* border: 8px solid #925f65; */
+    border-radius: 20px;
+    margin:40px;
+    
+}
+
+.food-ordering{
+    display: grid;
+    grid-template-columns: 300px 300px;
+    gap: 50px;
+    align-items: center;
+    /* border: 8px solid #925f65; */
+    border-radius: 20px;
+    padding:8px;
+    margin: 40px;
+   
+}
+.blog-app img{
+    border: 2px solid white;
+}
+
+.blog-app{
+    display: grid;
+    grid-template-columns: 300px 300px;
+    gap: 50px;
+    align-items: center;
+    
+    border-radius: 20px;
+    margin: 40px;
+}
+
+.image-container img{
+    height:200px;
+    object-fit: contain;
+}
