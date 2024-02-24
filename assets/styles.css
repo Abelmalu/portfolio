@@ -1,10 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Lobster&display=swap');
+
+:root {
+    --primary-color: #41292C;
+    --secondary-color: #0E1428;
+}
+
+.dark{
+    --primary-color: #0E1428;
+    
+
+}
+.sun{
+    --primary-color: #41;
+    
+
+}
 
 *{
     margin:0;
     padding:0;
     box-sizing: border-box;
-    background-color: #41292C;
+    /* background-color: #0E1428;
+    background-color: #41292C; */
+    
+
+   
 }
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+    background-color: var(--primary-color);
+}
+
+
+
+
+
+
+.navbar {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    max-width: 1000px;
+    margin:0 auto;
+    padding:10px;
+}
+
+.brand-title {
+    font-size: 1.5rem;
+    margin: .5rem;
+    font-family: "Lobster", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+}
+
+/* .navbar-links {
+    height: 100%;
+} */
+
+.navbar-links ul {
+    display: flex;
+    margin: 0;
+    padding: 0 100px;
+    justify-content: space-between;
+}
+
+.navbar-links li {
+    list-style: none;
+}
+
+.navbar-links li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding:  0 2rem;
+    padding-top: 10px;
+}
+
+/* .navbar-links li:hover {
+    background-color: #555;
+} */
+img.light{
+    display:none;
+    width:25px;
+    cursor:pointer;
+}
+#icon{
+    width:30px;
+    cursor:pointer;
+}
+
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+
+.navbar-links ul li a:hover{
+color: #925f65;
+}
+
 
 .hero{
   
@@ -15,28 +126,61 @@
   gap: 10px;
   background-repeat: no-repeat;
   align-items: center;
-  padding-left: 60px;
+  /* padding-left: 60px; */
   padding-bottom:40px;
   padding-top:40px;
-  justify-content: center;
+  justify-content:start;
 
   color:white;
   justify-content: center;
   /* background-blend-mode: multiply; */
   background-position: right right;
+ 
   
  
  
 
 
 } 
-
-.container{
-
-/* background-image: url('e.jpg'); */
-background-color: #41292C;
-    background-size: cover;
+.hero .image img{
+    position: relative;
+    width:100%;
 }
+
+.hero .image .fa-telegram{
+    position: absolute;
+        left: 75%;
+        top: 350px;
+        color: #66c938;
+  
+
+}
+
+.hero .image .fa-linkedin{
+    position: absolute;
+        left: 75%;
+        top: 250px;
+        color:#66c938;
+    
+}
+.hero .image .fa-github{
+    position: absolute;
+        left: 75%;
+        top: 300px;
+        color: #66c938;
+   
+}
+
+.hero .image .fa-instagram{
+    position: absolute;
+    left: 75%;
+     top: 400px;
+    color: #66c938;
+}
+
+
+
+
 
 
 
@@ -56,9 +200,10 @@ background-color: #41292C;
 }
 
 .hero h1{
-    font-size: 50px;
+    font-size: 60px;
     padding:20px 0;
     font-weight: bold;
+    color: #66c938;
 
 }
 
@@ -66,45 +211,26 @@ background-color: #41292C;
     font-size:30px;
 }
 
+
 .hero h2 {
     margin-bottom:20px;
-}
-
-nav {
-    display:grid;
-    grid-template-columns:400px 500px;
-    justify-content: center;
-    padding:20px 0;
-    background-color: #41292C;
-    /* #937B63; */
-    color:#fff;
-    border: 20px;
-
-}
-
-nav ul {
-    display: grid;
-    grid-template-columns: repeat(5,100px);
-    justify-content:end;
     
 }
-nav span {
-    color:red;
-}
-nav ul li{
-    list-style-type: none;
 
+.hero p{
+    line-height: 22px;
 }
+
 
 .about{
     display:grid;
-    grid-template-columns:600px 300px;
+    grid-template-columns:600px 400px;
     align-items: center;
     padding:60px;
     gap:10px;
     justify-content: center;
     grid-auto-columns: 250px;
-    background-color: #41292C;
+   /* border: 2px solid #f44336; */
     
         
 }
@@ -125,15 +251,47 @@ nav ul li{
 
 .about-me h1{
 
-    font-size: 40px;
+    font-size: 45px;
     padding-bottom:20px;
+    color: #66c938;
+}
+.about-me p{
+
+    
+    padding-bottom:30px;
+    line-height:25px;
+}
+.statment a{
+    display:inline-block;
+    margin:30px;
+    margin-left: 0;
+    padding: 15px 30px;
+    border: 2px solid #41292C;
+    border-radius: 40px;
+    background-color: #66c938;
+    color:#160846;
+    font-weight: bold;
+    font-size: 20px;
+
+
 }
 
 
-button{
-    padding:10px;
-    margin:20px;
-    font-size: 25px;
+.about-me a {
+    margin: 30px;
+    margin-top: 100px;
+    border: 2px solid #e74f60;
+    padding:10px 30px;
+    border-radius: 40px;
+   
+    color: #fff;
+
+
+}
+
+.about-me a:hover{
+    background-color: #e74f60;
+
 }
 
 .heading {
@@ -142,14 +300,20 @@ button{
     padding-top: 50px;
     font-size: 35px;
 }
+
+.skill h1{
+    color: #66c938;
+    font-size: 36px;
+}
 .experience{
     
-    padding:30px;
+    padding:20px;
     display:grid;
     grid-template-columns: repeat(3,300px);
     color: antiquewhite;
     gap:30px;
     justify-content: center;
+ 
     
 }
 
@@ -195,12 +359,18 @@ button{
 .services{
     color:#fff;
 }
+.services-h1{
+/* color: #38a0c9; */
+color: #66c938;
+    padding-bottom:10px;
+}
 
 .ma-offer{
     display:grid;
     grid-template-columns: repeat(3,300px);
     gap: 30px;
     justify-content: center;
+   
 
 }
 
@@ -275,108 +445,70 @@ button{
 
 
 }
-.contact-me h1{
-    padding : 30px;
-    text-align: center;
-    color:#fff;
-
-}
-.contact-me{
-    padding : 30px;
-    color: #fff;
-
-}
-
-.contact{
-    display: grid;
-    grid-template-columns: repeat(3,300px);
-    justify-content: center;
-    gap:30px;
-}
-.location{
-    border: 10px solid #694348;
-    text-align: center;
-    padding:30px;
-
-    
-
-}
-.location h3{
-
-    padding:10px;
-    padding-top:15px;
-}
-.phone{
-    border: 10px solid #694348;
-    text-align: center;
-    padding: 30px;
-
-}
-.phone h3 {
-
-    padding: 10px;
-    padding-top: 15px;
-}
-
-.email{
-    border: 10px solid #694348;
-    text-align: center;
-    padding: 30px;
-
-}
-.email h3 {
-
-    padding: 10px;
-    padding-top: 15px;
-}
 
 
-
-form{
-   padding:30px 0;
-    margin:20px auto;
-    text-align: center;
-    color:white;
-       
-} 
-
-form .name, .f-email{
-    width:25%;
-    padding:20px 0;
-    margin:20px 0;
-    border: 3px solid #694348;
-    border-radius: 20px ;
-    padding-left: 20px;
-    color: white;
-}
-
-form textarea{
-    width:50%;
-    padding: 20px 0;
-    border: 3px solid #694348;
-    border-radius: 20px;
-    padding-left: 20px;
-    color: white;
-    border: 2px solid #925f65;
-}
-
-form .button {
-    padding:15px 20px;
-    border-radius: 15px;
-    color:white;
-    background: rgba(10, 165, 165, 0.377);
-    color: white;
-}
 
 .projects{
     display:grid;
     grid-template-columns: repeat(1,800px);
-    padding:30px;
+   
     gap: 30px;
     padding-left: 180px;
     color:#fff;
     
+    
   
+}
+.projects h1{
+    /* color: #66c938; */
+    /* background-color: #773726; */
+    padding:10px;
+}
+.projects h2{
+
+    color: #82fd97;
+}
+.smart-class-room .description p {
+    
+    padding-left: 10px;
+    border-radius: 5px;
+    box-shadow: #160846;
+    background-color: #925f6546;
+    border-left: 10px solid #925f65;
+    padding-top: 10px;
+    line-height: 25px;
+    margin-bottom: 20px;
+}
+
+.description a span,
+.description a i {
+    background-color: #691c2521;
+    padding: 10px;
+
+
+}
+
+.blog-app .description p {
+    border-left: 10px solid #925f65;
+    padding-left: 10px;
+    border-radius: 5px;
+    box-shadow: #160846;
+   background-color: #925f6546;
+    padding-top: 10px;
+    line-height: 25px;
+    margin-bottom: 20px;
+}
+
+
+.food-ordering .description p {
+    border-left: 10px solid #925f65;
+    padding-left: 10px;
+    border-radius: 5px;
+    box-shadow: #160846;
+   background-color: #925f6546;
+    padding-top: 10px;
+    line-height: 25px;
+    margin-bottom: 20px;
 }
 
 .projects h1{
@@ -393,7 +525,14 @@ form .button {
     /* border: 8px solid #925f65; */
     border-radius: 20px;
     margin:40px;
-    
+ 
+}
+
+.smart-class-room h2{
+    padding-bottom:10px;
+}
+.smart-class-room p{
+    padding-bottom:10px;
 }
 
 .food-ordering{
@@ -407,8 +546,18 @@ form .button {
     margin: 40px;
    
 }
+.food-ordering h2{
+    padding-bottom: 10px;
+
+}
+.food-ordering p{
+    padding-bottom: 10px;
+
+}
 .blog-app img{
     border: 2px solid white;
+    width:100%;
+    object-fit: cover;
 }
 
 .blog-app{
@@ -420,8 +569,628 @@ form .button {
     border-radius: 20px;
     margin: 40px;
 }
+.blog-app h2{
+    padding-bottom: 10px;
+}
+.blog-app p{
+    padding-bottom: 10px;
+}
 
 .image-container img{
     height:200px;
     object-fit: contain;
 }
+.blog-app img {
+ 
+    width: 100%;
+    height: 180px;
+    border:none;
+   
+}
+
+a{
+    text-decoration: none;
+    color:#fff;
+}
+
+.about button a:hover{
+    background-color: #773726;
+    
+
+}
+
+
+.contact-me h1 {
+   
+    text-align: center;
+    /* color: #66c938; */
+
+}
+.contact-me h2 {
+   
+   
+    color:#925f65;
+    
+
+}
+
+.contact-me {
+    padding: 30px 0 10px 0;
+    color: #fff;
+
+}
+
+.contact {
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    justify-content: center;
+    gap: 30px;
+    
+    max-width: 950px;
+    margin:10px auto;
+   
+    text-align: center;
+    margin:0 auto;
+   
+}
+
+.location {
+   
+    text-align: center;
+    padding: 30px;
+    color:#66c938;
+
+
+    }
+
+
+
+
+
+.location h3 {
+
+    padding: 10px;
+    padding-top: 15px;
+}
+
+.contact-me h2 {
+    text-align: center;
+    padding: 20px;
+}
+
+.phone {
+   
+    text-align: center;
+    padding: 30px;
+    color:#66c938;
+
+}
+
+.phone h3 {
+
+    padding: 10px;
+    padding-top: 15px;
+}
+
+.email {
+   
+    border-radius: 20px;
+    text-align: center;
+    padding: 30px;
+    color: #66c938
+
+}
+
+.email h3 {
+
+    padding: 10px;
+    padding-top: 15px;
+}
+
+
+
+form {
+    padding: 30px 0;
+    margin: 20px auto;
+    text-align: center;
+    color: white;
+    
+ 
+
+}
+
+form .name,
+.f-email {
+    width: 25%;
+    padding: 20px 0;
+    margin: 20px 0;
+    border: 2px solid #925f65;
+    border-radius: 20px;
+    padding-left: 20px;
+    color: white;
+    background-color: #41292C;
+}
+
+form .textarea {
+    width: 50%;
+    padding: 20px 0;
+    border: 3px solid #694348;
+    border-radius: 20px;
+    padding-left: 20px;
+    color: white;
+    border: 2px solid #925f65;
+    background-color: #41292C;
+
+}
+
+form .textarea:focus{
+    border:2px solid #82fd97;
+}
+
+form .button {
+    padding: 15px 20px;
+    border-radius: 45px;
+    color: white;
+    background: rgba(10, 165, 165, 0.377);
+    color: white;
+    border: 2px solid slateblue;
+    cursor: pointer;
+
+}
+
+
+@media screen and (max-width:1290px){
+
+    .hero {
+    
+    
+            /* background-color: rgba(100, 0, 25, 0.5); */
+            display: grid;
+            grid-template-columns: 400px 500px;
+            gap: 10px;
+            background-repeat: no-repeat;
+            align-items: center;
+            /* padding-left: 60px; */
+            padding-bottom: 40px;
+            padding-top: 40px;
+            justify-content: center;
+    
+            color: white;
+            justify-content: center;
+            /* background-blend-mode: multiply; */
+            background-position: right right;
+    
+    
+    
+    
+    
+        }
+    
+        .hero .image img {
+            position: relative;
+            width: 100%;
+        }
+
+                .about {
+                    display: grid;
+                    grid-template-columns: 450px 400px;
+                    align-items: center;
+                    padding: 60px;
+                    gap: 10px;
+                    justify-content: center;
+                    grid-auto-columns: 250px;
+        
+        
+        
+                }
+             
+
+
+}
+
+
+@media screen and (max-width:1046px){
+        .hero {
+        
+        
+                /* background-color: rgba(100, 0, 25, 0.5); */
+                display: grid;
+                grid-template-columns: 400px 500px;
+                gap: 10px;
+                background-repeat: no-repeat;
+                align-items: center;
+                /* padding-left: 60px; */
+                padding-bottom: 40px;
+                padding-top: 40px;
+                justify-content: center;
+        
+                color: white;
+                justify-content: center;
+                /* background-blend-mode: multiply; */
+                background-position: right right;
+        
+        
+        
+        
+        
+            }
+    .about {
+             display: grid;
+             grid-template-columns: 400px 400px;
+             align-items: center;
+             padding: 60px;
+             gap: 10px;
+             justify-content: center;
+             grid-auto-columns: 250px;
+            
+            
+            
+         }
+        .experience {
+    
+            padding: 30px;
+            display: grid;
+            grid-template-columns: repeat(3, 200px);
+            color: antiquewhite;
+            gap: 30px;
+            justify-content: center;
+    
+        }
+        .ma-offer {
+            display: grid;
+            grid-template-columns: repeat(3, 200px);
+            gap: 30px;
+            justify-content: center;
+    
+        }
+        .contact {
+            display: grid;
+            grid-template-columns: repeat(3, 200px);
+            justify-content: center;
+            gap: 30px;
+    
+            max-width: 950px;
+            margin: 10px auto;
+    
+            text-align: center;
+            
+
+
+
+
+    .hero .image .fa-telegram {
+            position: absolute;
+            left: 80%;
+            top: 350px;
+            color: #66c938;
+    
+    
+        }
+    
+        .hero .image .fa-linkedin {
+            position: absolute;
+            left: 80%;
+            top: 250px;
+            color: #66c938;
+    
+        }
+    
+        .hero .image .fa-github {
+            position: absolute;
+            left: 80%;
+            top: 300px;
+            color: #66c938;
+    
+        }
+    
+        .hero .image .fa-instagram {
+            position: absolute;
+            left: 80%;
+            top: 400px;
+            color: #66c938;
+        }
+}
+}
+
+
+
+
+@media screen and (max-width:1025px){
+    .hero .image .fa-telegram {
+            position: absolute;
+            left: 85%;
+            top: 350px;
+            color: #66c938;
+    
+    
+        }
+    
+        .hero .image .fa-linkedin {
+            position: absolute;
+            left: 85%;
+            top: 250px;
+            color: #66c938;
+    
+        }
+    
+        .hero .image .fa-github {
+            position: absolute;
+            left: 85%;
+            top: 300px;
+            color: #66c938;
+    
+        }
+    
+        .hero .image .fa-instagram {
+            position: absolute;
+            left: 85%;
+            top: 400px;
+            color: #66c938;
+        }
+    
+.projects {
+    display: grid;
+    grid-template-columns: repeat(1, 600px);
+    padding: 30px;
+    gap: 30px;
+    /* padding-left: 180px; */
+    color: #fff;
+
+    justify-content: center;
+
+
+}
+.smart-class-room{
+    margin-left: 0;
+}
+
+.blog-app{
+    margin-left: 0;
+}
+
+.food-ordering{
+    margin-left: 0;
+}
+
+.web-design h1{
+    font-size: 22px;
+    padding:10px
+}
+.web-dev h1{
+    font-size: 22px;
+    padding: 10px
+}
+.py-auto h1{
+    font-size: 22px;
+    padding: 10px
+}
+
+
+}
+
+
+
+
+
+@media screen and (max-width:850px){
+
+    .navbar {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    
+        .toggle-button {
+            display: flex;
+        }
+    
+        .navbar-links {
+            display: none;
+            width: 100%;
+        }
+    
+        .navbar-links ul {
+            width: 100%;
+            flex-direction: column;
+        }
+    
+        .navbar-links ul li {
+            text-align: center;
+        }
+    
+        .navbar-links ul li a {
+            padding: .5rem 1rem;
+        }
+    
+        .navbar-links.active {
+            display: flex;
+        }
+    .hero .image .fa-telegram {
+            position:static;
+            /* left: 85%;
+            top: 350px; */
+            color: #66c938;
+            padding:10px;
+    
+    
+        }
+    
+        .hero .image .fa-linkedin {
+            position: static;
+            color: #66c938;
+            padding: 10px;
+    
+        }
+    
+        .hero .image .fa-github {
+            position: static;
+            color: #66c938;
+            padding: 10px;
+    
+        }
+    
+        .hero .image .fa-instagram {
+            position: static;
+            color: #66c938;
+            padding: 10px;;;
+        }
+    
+
+
+
+
+.hero{
+    display: block;
+    text-align: center;
+}
+.hero .image img{
+    display:none;
+}
+
+
+.about{
+
+    display:block;
+    text-align: center;
+}
+
+.experience{
+    grid-template-columns: repeat(3,100px);
+
+
+}
+svg {
+    height: 100px;
+    width: 80px;
+
+}
+.experience div h2{
+    display: none;
+}
+
+
+.experience .fa-brands{
+    font-size: 50px;
+
+}
+.ma-offer{
+    display:block;
+    text-align: center;
+   
+}
+.ma-offer div{
+    margin:20px auto;
+    width: 50%;
+    
+}
+
+.projects {
+    display: block;
+    
+    padding-left:90px;
+  
+  
+
+
+}
+.projects div h2{
+    text-align: center;
+    
+}
+
+
+.smart-class-room img{
+   
+    display:none;
+}
+.smart-class-room .description p{
+    padding-left:10px;
+    border-radius: 5px;
+    box-shadow: #160846;
+    background-color: #925f6546;
+    border-left: 10px solid #925f65;
+    padding-top:10px;
+    line-height:25px;
+    margin-bottom: 20px;
+}
+
+.description a span, .description a i{
+
+    padding:10px;
+
+
+}
+
+.blog-app .description p {
+    
+    padding-left: 10px;
+    border-radius: 5px;
+    box-shadow: #160846;
+    background-color: #925f6546;
+    border-left: 10px solid #925f65;
+    padding-top: 10px;
+    line-height: 25px;
+    margin-bottom: 20px;
+}
+
+
+.food-ordering .description p {
+    padding-left: 10px;
+    border-radius: 5px;
+    box-shadow: #160846;
+    background-color: #925f6546;
+    border-left: 10px solid #925f65;
+    padding-top: 10px;
+    line-height: 25px;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+.blog-app img {
+   
+    display: none;
+}
+
+.food-ordering img{
+    margin-left: 0;
+    display: none;
+}
+
+.web-design h1{
+    font-size: 22px;
+    padding:10px
+    
+}
+.web-dev h1{
+    font-size: 22px;
+    padding: 10px
+}
+.py-auto h1{
+    font-size: 22px;
+    padding: 10px
+}
+
+.contact{
+    grid-template-columns: repeat(3,22%);
+    gap:5%;
+    justify-content: start;
+}
+.contact h3{
+    display:none;
+    
+}
+.contact p{
+    margin:20px 0;
+}
+
+
+
+}
+
+
+
+
