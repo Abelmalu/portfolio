@@ -5,16 +5,6 @@
     --secondary-color: #0E1428;
 }
 
-.dark{
-    --primary-color: #0E1428;
-    
-
-}
-.sun{
-    --primary-color: #41;
-    
-
-}
 
 *{
     margin:0;
@@ -40,13 +30,13 @@ body {
 
 .navbar {
     display: flex;
-    position: relative;
     justify-content: space-between;
     align-items: center;
     color: white;
     max-width: 1000px;
     margin:0 auto;
     padding:10px;
+
 }
 
 .brand-title {
@@ -85,7 +75,7 @@ img.light{
     cursor:pointer;
 }
 #icon{
-    width:30px;
+    width:25px;
     cursor:pointer;
 }
 
@@ -875,6 +865,14 @@ form .button {
             left: 85%;
             top: 400px;
             color: #66c938;
+        }
+        .hero p{
+
+            width:80%;
+            margin-left: 10%;
+            margin-right: 10%;
+            
+            
         }
     
 .projects {
