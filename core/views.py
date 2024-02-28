@@ -18,4 +18,4 @@ def index(request):
     context = {
         'form':form
     }
-    return render(request, 'core/index.html', context)
+    return render(request, 'core/base_layout.html', context)
