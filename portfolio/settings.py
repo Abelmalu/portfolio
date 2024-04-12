@@ -31,7 +31,9 @@ ALLOWED_HOSTS = ['abelmalu.up.railway.app','127.0.0.1']
 
 CSRF_TRUSTED_ORIGINS = [
     'https://abelmalu.up.railway.app/',
-    'https://abelmalu.up.railway.app/admin/login/?next=/admin/'
+    'https://abelmalu.up.railway.app',
+    'https://abelmalu.up.railway.app/admin/login/',
+    'https://abelmalu.up.railway.app/admin/login/?next=/admin/',
 
     
 ]
